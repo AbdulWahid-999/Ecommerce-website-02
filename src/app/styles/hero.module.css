@@ -1,0 +1,57 @@
+
+.hero {
+ background: url(/men.jpg);
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+  padding: 18rem 0;
+  text-align: center;
+  font-family:  Helvetica, sans-serif;
+}
+
+.hero h1 {
+  font-size: 3.5rem;;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: whitesmoke
+
+}
+
+.hero p {
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  color:whitesmoke
+}
+
+.shopButton {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.shopButton:hover {
+  background-color: orange;
+  transition-duration: 0.3s ;
+  transform: scale(1.1);
+}
+@media(max-width: 490px){
+  .hero h1 {
+    font-size: 2rem;;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: whitesmoke
+  
+  }
+  
+  .hero p {
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color:whitesmoke
+  }
+
+}

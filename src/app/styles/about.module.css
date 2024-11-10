@@ -1,0 +1,67 @@
+.aboutUs {
+  display: flex;
+  justify-content: center; /* Center the container */
+  align-items: center; /* Vertically center the container */
+  flex-direction: column; /* Stack items vertically */
+  height: 100vh; /* Full height of the viewport */
+  background: url(/men.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Yellow background */
+  text-align: center; /* Center align text */
+  padding: 20px; /* Add some padding */
+  box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.container {
+  max-width: 800px; /* Limit maximum width of content */
+  width: 100%; /* Full width for smaller screens */
+}
+
+.heading {
+  font-weight: bold; /* Bold font weight */
+  font-size: 2.5rem; /* Font size for heading */
+  margin-bottom: 20px; /* Space below heading */
+  color: whitesmoke;
+}
+
+.content {
+  font-size: 1.2rem; /* Font size for paragraph */
+  line-height: 1.6; /* Line height for readability */
+  margin: 0; /* Remove default margin */
+  color: whitesmoke;
+}
+@media(max-width: 600px){
+  .heading {
+    font-weight: 600; 
+    font-size: 2.5rem; 
+    margin: 20px 0px;
+  }
+  
+  .content {
+    font-size: 1rem; /* Font size for paragraph */
+    line-height: 1.9; /* Line height for readability */
+    margin: 10px 0px; /* Remove default margin */
+    font-weight: 500;
+
+  }
+  
+
+}
+@media(max-width: 400px){
+  .heading {
+    font-weight: 600; 
+    font-size: 2rem; 
+    margin: 20px 0px;
+  }
+  
+  .content {
+    font-size: 0.9rem; /* Font size for paragraph */
+    line-height: 1.9; /* Line height for readability */
+    margin: 10px 0px; /* Remove default margin */
+    font-weight: 500;
+
+  }
+  
+
+}

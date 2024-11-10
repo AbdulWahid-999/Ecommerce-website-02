@@ -1,0 +1,42 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer p {
+    margin-bottom: 1rem;
+  }
+  
+  .footer form {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .footer input {
+    padding: 0.5rem;
+    border-radius: 5px 0 0 5px;
+    border: none;
+  }
+  
+  .footer button {
+    background-color: yellow;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .footer button:hover {
+    background-color: orange;
+    transition-duration: 0.3s;
+  }
+  
