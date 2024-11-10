@@ -9,7 +9,7 @@ export default function Navbar() {
 
   // Toggle function to open and close the sidebar
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prev) => !prev);
   };
 
   // Close menu when a link is clicked
@@ -21,8 +21,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <div className={styles.container}>
         <div className={styles.logo}>The Fashionary</div>
-        
-        {/* Hamburger Menu Icon */}
+
         <div
           className={`${styles.hamburger} ${isOpen ? styles.active : ''}`}
           onClick={toggleMenu}
@@ -31,8 +30,7 @@ export default function Navbar() {
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
         </div>
-        
-        {/* Sidebar Menu */}
+
         <div className={`${styles.menu} ${isOpen ? styles.active : ''}`}>
           <Link href="/" className={styles.link} onClick={closeMenu}>Home</Link>
           <Link href="/about" className={styles.link} onClick={closeMenu}>About</Link>

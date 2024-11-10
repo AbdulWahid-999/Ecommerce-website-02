@@ -38,7 +38,7 @@
   gap: 2rem;
 }
 
-/* Basic Link Styling */
+/* Link Styling */
 .link {
   text-decoration: none;
   font-weight: bolder;
@@ -46,39 +46,28 @@
   color: black;
   padding-top: 9px;
   padding-left: 7px;
-  position: relative;
 }
 
-/* On hover styling */
 .link:hover {
   color: orange;
   transition-duration: 0.3s;
-  transform: scale(1.05); /* Optional */
-  text-decoration: none;
-}
-
-/* Remove any pseudo-element content */
-.link::before,
-.link::after {
-  content: none !important; /* Remove any arrow/icon */
-}
-
-/* Remove browser focus or hover styling */
-.link:focus,
-.link:hover {
-  outline: none; /* Remove outline */
-  text-decoration: none; /* Ensure no underline on hover/focus */
+  transform: scale(1.05);
 }
 
 .signUpButton {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: white;
-  padding: 10px;
+  width: 100px; /* Set a fixed width */
+  height: 40px;  /* Set a fixed height */
   border: none;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
 }
 
 .signUpButton:hover {
@@ -88,14 +77,15 @@
   transform: scale(1.1);
 }
 
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .hamburger {
-    display: flex; /* Show hamburger on small screens */
+    display: flex;
   }
 
   .menu {
-    display: none; /* Hide menu by default */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -103,97 +93,17 @@
     width: 100%;
     height: 100vh;
     background-color: rgba(255, 102, 0, 0.891);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-y: auto; /* Allow scrolling in case of overflow */
-  }
-
-  .menu.active {
-    display: flex; /* Show menu when active */
-  }
-
-  .link {
-    position: relative;
-    top: 30px;
-    left: 20px;
-    width: 100%; /* Full width for links */
-  }
-
-  .signUpButton {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
-    margin: auto; /* Center it horizontally */
-  }
-}
-
-@media (max-width: 768px) {
-  .logo {
-    font-size: 20px; /* Slightly smaller logo size */
-  }
-
-  .bar {
-    height: 2px;
-    width: 20px;
-    background-color: black;
-    margin: 3px 0;
-    transition: all 0.6s ease;
   }
 
   .menu.active {
     display: flex;
-    flex-direction: column;
-  }
-
-  .signUpButton {
-    position: absolute;
-    top: 200px;
-    left: 0;
-    right: 0;
-    margin: auto; /* Center it horizontally */
-  }
-}
-
-@media (max-width: 600px) {
-  .logo {
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .bar {
-    height: 2px;
-    width: 20px;
-    background-color: black;
-    margin: 3px 0;
-    transition: all 0.6s ease;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(255, 102, 0, 0.891); /* Mobile menu background color */
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    gap: 20px;
-    padding-top: 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .link {
-    font-size: 16px; /* Slightly smaller font size */
-    padding-left: 20px; /* Indent the links for mobile */
-    padding-top: 15px;
+    padding-left: 20px;
   }
 
   .signUpButton {
-    position: absolute;
-    top: 250px; /* Adjust position for smaller screens */
-    left: 0;
-    right: 0;
-    margin: auto; /* Center button horizontally */
+    margin-top: 20px;
   }
 }
